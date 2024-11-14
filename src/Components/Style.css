@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+body{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Lato", serif;
+
+}
+aside{
+    width: 250px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background-color: #22be0d;
+    text-align: center;
+    position: fixed;
+    height: max-content;
+    
+   
+}
+.siderbar_inner>ul>li{
+    list-style: none;
+    margin-bottom: 10px;
+   display: flex;
+   justify-content: center;
+
+}
+.siderbar_inner>ul{
+    padding-left: 0;
+
+}
+.siderbar_inner>ul>li>a{
+    list-style: none;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    margin-top: 5px;
+    padding: 13px;
+    border-radius: 8px;
+    font-weight: 550;
+}
+.siderbar_inner>ul>li>a.active{
+    background-color: #fff;
+    color: #22be0d;
+    
+}
+.Logout_hover:hover{
+    background-color: #fff;
+    color: #22be0d;
+}
+.main_area{
+    padding: 50px 0px 0px 0px;
+}
+nav{
+    padding: 15px;
+    background-color: #22be0d;
+
+}
+.log_btn>p{
+    background-color: #fff;
+    border-radius: 48px;
+    color: #22be0d;
+    padding: 16px 45px !important;
+    position: relative;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    font-size: 18px;
+    transition: all ease 0.5s;
+    text-transform: capitalize;
+    font-weight: 550;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+.log_btn>p::before{
+content: "";
+height: 110%;
+width: 110%;
+border-radius: 48px;
+background-color: transparent;
+position: absolute;
+transition: all ease 0.9s;
+opacity: 0;
+border: 1px dashed #22be0d;
+}
+.log_btn>p:hover::before{
+    height: 80%;
+width: 80%;
+opacity: 1;
+}
+
+
+
+.select-dropdown,
+.select-dropdown * {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	box-sizing: border-box;
+}
+.select-dropdown {
+	position: relative;
+	background-color: #E6E6E6;
+	border-radius: 4px;
+}
+.select-dropdown select {
+	font-size: 1rem;
+	font-weight: normal;
+	max-width: 100%;
+	padding: 8px 24px 8px 10px;
+	border: none;
+	background-color: transparent;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	appearance: none;
+}
+.select-dropdown select:active, .select-dropdown select:focus {
+	outline: none;
+	box-shadow: none;
+}
+.select-dropdown:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 8px;
+	width: 0;
+	height: 0;
+	margin-top: -2px;
+	border-top: 5px solid #aaa;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+}
+
+
+
+
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 600px;
+    border-radius: 10px;
+    background:white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper2 {
+width: 420px;
+background-color:#22be0d;
+border: 2px solid rgba(255, 255, 255, 02);
+backdrop-filter: blur(20px);
+color: #fff;
+border-radius: 10px;
+padding: 30px 40px;
+height: 40vh;
+}
+.wrapper h1 {
+font-size: 36px;
+text-align: center;
+}
+.wrapper2 .input-box {
+position: relative;
+width: 100%;
+height: 50px;
+margin: 15px 0;
+margin-bottom: 25px;
+}
+.input-box input {
+width: 100%;
+height: 50px;
+background: transparent;
+border: none;
+outline: none;
+border: 2px solid rgba(255, 255, 255, .2);
+border-radius: 40px;
+font-size: 16px;
+color: #fff;
+padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder {
+color: #fff;
+}
+.input-box i {
+position:absolute;
+right: 20px;
+top: 50%;
+transform: translateY(-50%);
+}
+.wrapper2 .btn {
+width: 100%;
+height: 45px;
+background-color: #fff;
+border: none;
+outline: none;
+margin-top:20px;
+border-radius: 40px;
+box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+cursor: pointer;
+font-size: 16px;
+color: #333;
+font-weight: 600;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+
+}
+@media screen and (max-width: 990px) {
+   aside{
+    width: 200px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+
+    aside{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .log_btn>a{
+        padding: 10px 25px !important;
+    }
+}
+
